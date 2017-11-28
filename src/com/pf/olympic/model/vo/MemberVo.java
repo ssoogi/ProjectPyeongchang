@@ -1,6 +1,6 @@
 package com.pf.olympic.model.vo;
 	
-	//¹ÚÁØ¼® MemberVo »ı¼º 
+	//ë°•ì¤€ì„ MemberVo 
 public class MemberVo {
 
 	private String memberId;
