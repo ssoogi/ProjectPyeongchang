@@ -5,7 +5,7 @@ public class MemberVo {
 
 	private String memberId;
 	private String memberName;
-	private String memberCategory;
+	private int memberCategory;
 	private String memberLoginId;
 	private String memberLoginPwd;
 	private String memberEmail;
@@ -17,7 +17,7 @@ public class MemberVo {
 		// TODO Auto-generated constructor stub
 	}
 
-	public MemberVo(String memberId, String memberName, String memberCategory, String memberLoginId,
+	public MemberVo(String memberId, String memberName, int memberCategory, String memberLoginId,
 			String memberLoginPwd, String memberEmail, String memberPhone, String memberAddress,
 			String memberDiscount) {
 		super();
@@ -48,11 +48,11 @@ public class MemberVo {
 		this.memberName = memberName;
 	}
 
-	public String getMemberCategory() {
+	public int getMemberCategory() {
 		return memberCategory;
 	}
 
-	public void setMemberCategory(String memberCategory) {
+	public void setMemberCategory(int memberCategory) {
 		this.memberCategory = memberCategory;
 	}
 
