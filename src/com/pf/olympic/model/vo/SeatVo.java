@@ -1,22 +1,23 @@
 package com.pf.olympic.model.vo;
 
 public class SeatVo {
-	
+
 	private String seatId;
 	private String seatLocation;
 	private String seatGrade;
-	private int seaPrice;
+	private int seatPrice;
 	private String matchId;
 
 	public SeatVo() {
 
-}
-	public SeatVo(String seatId, String seatLocation, String seatGrade, int seaPrice, String matchId) {
+	}
+
+	public SeatVo(String seatId, String seatLocation, String seatGrade, int seatPrice, String matchId) {
 		super();
 		this.seatId = seatId;
 		this.seatLocation = seatLocation;
 		this.seatGrade = seatGrade;
-		this.seaPrice = seaPrice;
+		this.seatPrice = seatPrice;
 		this.matchId = matchId;
 	}
 
@@ -44,12 +45,12 @@ public class SeatVo {
 		this.seatGrade = seatGrade;
 	}
 
-	public int getSeaPrice() {
-		return seaPrice;
+	public int getSeatPrice() {
+		return seatPrice;
 	}
 
-	public void setSeaPrice(int seaPrice) {
-		this.seaPrice = seaPrice;
+	public void setSeatPrice(int seatPrice) {
+		this.seatPrice = seatPrice;
 	}
 
 	public String getMatchId() {
@@ -62,8 +63,7 @@ public class SeatVo {
 
 	@Override
 	public String toString() {
-		return "SeatVo [좌석ID=" + seatId + ", 좌석위치=" + seatLocation + ", 좌석등급=" + seatGrade
-				+ ", 좌석가격=" + seaPrice + ", 경기Id=" + matchId + "]";
+		return "SeatVo [좌석ID=" + seatId + ", 좌석위치=" + seatLocation + ", 좌석등급=" + seatGrade + ", 좌석가격=" + seatPrice
+				+ ", 경기Id=" + matchId + "]";
 	}
 }
-	

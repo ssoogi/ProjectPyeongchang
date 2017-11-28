@@ -1,6 +1,6 @@
 package com.pf.olympic.model.vo;
-	
-	//���ؼ� MemberVo ���� 
+
+//박준석 MemberVo 
 public class MemberVo {
 
 	private String memberId;
@@ -11,15 +11,14 @@ public class MemberVo {
 	private String memberEmail;
 	private String memberPhone;
 	private String memberAddress;
-	private String memberDiscount;
+	private int memberDiscount;
 
 	public MemberVo() {
-		// TODO Auto-generated constructor stub
+
 	}
 
-	public MemberVo(String memberId, String memberName, int memberCategory, String memberLoginId,
-			String memberLoginPwd, String memberEmail, String memberPhone, String memberAddress,
-			String memberDiscount) {
+	public MemberVo(String memberId, String memberName, int memberCategory, String memberLoginId, String memberLoginPwd,
+			String memberEmail, String memberPhone, String memberAddress, int memberDiscount) {
 		super();
 		this.memberId = memberId;
 		this.memberName = memberName;
@@ -96,11 +95,11 @@ public class MemberVo {
 		this.memberAddress = memberAddress;
 	}
 
-	public String getMemberDiscount() {
+	public int getMemberDiscount() {
 		return memberDiscount;
 	}
 
-	public void setMemberDiscount(String memberDiscount) {
+	public void setMemberDiscount(int memberDiscount) {
 		this.memberDiscount = memberDiscount;
 	}
 
