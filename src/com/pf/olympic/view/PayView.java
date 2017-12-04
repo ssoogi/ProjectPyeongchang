@@ -44,9 +44,9 @@ public class PayView extends JFrame {
 		setTitle("MainView");
 		setLayout(null);
 
-		// °æ±âÁ¤º¸, µî±Ş, ¼ö·®, ÁÂ¼®¹øÈ£, °¡°İ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½Â¼ï¿½ï¿½ï¿½È£, ï¿½ï¿½ï¿½ï¿½
 		Object[][] data = new Object[0][5];
-		Object[] columnNames = { "°æ±âÁ¤º¸", "µî±Ş", "ÁÂ¼®¹øÈ£", "¼ö·®", "°¡°İ" };
+		Object[] columnNames = { "ê²½ê¸°ì •ë³´", "ë“±ê¸‰", "ì¢Œì„ë²ˆí˜¸", "ìˆ˜ëŸ‰", "ê°€ê²©" };
 		dtm = new DefaultTableModel(data, columnNames);
 		table = new JTable(dtm);
 		scrol_table = new JScrollPane(table);
@@ -58,7 +58,7 @@ public class PayView extends JFrame {
 		table.getColumnModel().getColumn(3).setPreferredWidth(50);
 		table.getColumnModel().getColumn(4).setPreferredWidth(100);
 		table.setRowHeight(50);
-		table.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		table.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
 		dctr = new DefaultTableCellRenderer();
 		dctr.setHorizontalAlignment(SwingConstants.CENTER);
@@ -67,7 +67,7 @@ public class PayView extends JFrame {
 			tcm.getColumn(i).setCellRenderer(dctr);
 		}
 		
-		table.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		table.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 
 		setContentPane(new JLabel(new ImageIcon("img/view_img/PayView3.jpg")));
 
@@ -95,19 +95,19 @@ public class PayView extends JFrame {
 		bt_cart.setRolloverIcon(icon_cart_mouse);
 		bt_mypage.setRolloverIcon(icon_mypage_mouse);
 
-		// ¹öÆ°ÀÇ ¿Ü°û¼±À» ¾ø¾ÖÁÖ¾ú´Ù.
+		// ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Ü°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½.
 		/*
 		 * bt_home.setBorderPainted(false); bt_match.setBorderPainted(false);
 		 * bt_reservation.setBorderPainted(false); bt_cart.setBorderPainted(false);
 		 * bt_mypage.setBorderPainted(false);
 		 */
 
-		la_name = new JLabel("ÁÖ¹®ÀÚ¸í");
-		la_email = new JLabel("ÀÌ¸ŞÀÏ");
-		la_phone = new JLabel("ÈŞ´ëÆù¹øÈ£");
+		la_name = new JLabel("ì£¼ë¬¸ìëª…");
+		la_email = new JLabel("ì´ë©”ì¼");
+		la_phone = new JLabel("íœ´ëŒ€í°ë²ˆí˜¸");
 		la_hyphen1 = new JLabel("-");
 		la_hyphen2 = new JLabel("-");
-		la_addr = new JLabel("ÁÖ¼Ò");
+		la_addr = new JLabel("ì£¼ì†Œ");
 		
 		tf_name = new JTextField(10);
 		tf_email = new JTextField(10);
@@ -126,48 +126,48 @@ public class PayView extends JFrame {
 		tf_addr2.setDocument(new JTextFieldLimit(18));
 		
 		
-		la_name.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_email.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_phone.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_hyphen1.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_hyphen2.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_addr.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		la_name.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_email.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_phone.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_hyphen1.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_hyphen2.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_addr.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
-		tf_name.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_email.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_phone1.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_phone2.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_phone3.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_addr1.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		tf_addr2.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		tf_name.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_email.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_phone1.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_phone2.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_phone3.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_addr1.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		tf_addr2.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
 		
 		
-		rbt_direct = new JRadioButton("ÇöÀå ¼ö·É(¹«·á)");
-		rbt_delivery = new JRadioButton("ÀÏ¹İ ¹è¼Û(2500¿ø)");
+		rbt_direct = new JRadioButton("í˜„ì¥ ìˆ˜ë ¹(ë¬´ë£Œ)");
+		rbt_delivery = new JRadioButton("ì¼ë°˜ ë°°ì†¡(2500ì›)");
 		bg1=new ButtonGroup();
 		bg1.add(rbt_direct);
 		bg1.add(rbt_delivery);
 		
-		rbt_direct.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		rbt_delivery.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
+		rbt_direct.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		rbt_delivery.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
 		
-		rbt_bank = new JRadioButton("¹«ÅëÀå ÀÔ±İ");
-		rbt_card = new JRadioButton("½Å¿ë/Ã¼Å©Ä«µå");
+		rbt_bank = new JRadioButton("ë¬´í†µì¥ ì…ê¸ˆ");
+		rbt_card = new JRadioButton("ì‹ ìš©/ì²´í¬ì¹´ë“œ");
 		bg2=new ButtonGroup();
 		bg2.add(rbt_bank);
 		bg2.add(rbt_card);
 		
-		rbt_bank.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		rbt_card.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
+		rbt_bank.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		rbt_card.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
 		
 		la_total_price = new JLabel("6000000");
 		la_ticket_price = new JLabel("6000000");
 		la_delivery_price = new JLabel("2500");
 		
-		la_total_price.setFont(new Font("µ¸¿ò", Font.BOLD, 40));
-		la_ticket_price.setFont(new Font("µ¸¿ò", Font.BOLD, 35));
-		la_delivery_price.setFont(new Font("µ¸¿ò", Font.BOLD, 35));
+		la_total_price.setFont(new Font("ë‹ì›€", Font.BOLD, 40));
+		la_ticket_price.setFont(new Font("ë‹ì›€", Font.BOLD, 35));
+		la_delivery_price.setFont(new Font("ë‹ì›€", Font.BOLD, 35));
 		
 		icon_return = new ImageIcon("img/img_icon/icon_return.png");
 		icon_pay = new ImageIcon("img/img_icon/icon_pay.png");

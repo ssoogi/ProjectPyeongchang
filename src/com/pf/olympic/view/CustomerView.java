@@ -47,7 +47,6 @@ public class CustomerView extends JFrame {
 		bt_cart.setRolloverIcon(icon_cart_mouse);
 		bt_mypage.setRolloverIcon(icon_mypage_mouse);
 		
-		//버튼의 외곽선을 없애주었다.
 		/*bt_home.setBorderPainted(false);
 		bt_match.setBorderPainted(false);
 		bt_reservation.setBorderPainted(false);

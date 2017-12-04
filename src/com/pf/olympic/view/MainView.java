@@ -52,14 +52,14 @@ public class MainView extends JFrame{
 		bt_login = new JButton(icon_login);
 		bt_join = new JButton(icon_join);
 		
-		//¹öÆ°ÀÇ ¿Ü°û¼±À» ¾ø¾ÖÁÖ¾ú´Ù.
+		//ë²„íŠ¼ ì™¸ê³½ì„  ì—†ì• ê¸°
 		/*bt_home.setBorderPainted(false);
 		bt_match.setBorderPainted(false);
 		bt_reservation.setBorderPainted(false);
 		bt_cart.setBorderPainted(false);
 		bt_mypage.setBorderPainted(false);*/
 		
-		//¸¶¿ì½º¸¦ ¹öÆ°¿¡ ¿Ã¸®¸é ÆÄ¶õ»ö ¾ğ´õ¹Ù»ı¼º!
+		//ë²„íŠ¼ì— ë§ˆìš°ìŠ¤ì˜¬ë¼ì˜¬ ë•Œ ì´ë¯¸ì§€ ë³€ê²½
 		bt_home.setRolloverIcon(icon_home_mouse);
 		bt_match.setRolloverIcon(icon_match_mouse);
 		bt_reservation.setRolloverIcon(icon_reserve_mouse);
@@ -79,8 +79,8 @@ public class MainView extends JFrame{
 		
 		tf_id.setBounds(980, 310, 170, 50);
 		tf_pw.setBounds(980, 395, 170, 50);
-		tf_id.setFont(new Font("µ¸¿ò", Font.BOLD, 35));
-		tf_pw.setFont(new Font("µ¸¿ò", Font.BOLD, 35));
+		tf_id.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 35));
+		tf_pw.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 35));
 		
 		bt_login.setBounds(912, 492, 259, 60);
 		bt_join.setBounds(912, 564, 259, 60);

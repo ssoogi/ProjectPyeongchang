@@ -5,7 +5,7 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 
  
-//ÅØ½ºÆ®ÇÊµå ±ÛÀÚ¼ö Á¦ÇÑÇÏ´Â Å¬·¡½º
+//í…ìŠ¤íŠ¸í•„ë“œë‚´ ê¸€ììˆ˜ ì œí•œ
 class JTextFieldLimit extends PlainDocument {
    private int limit;
    private boolean toUppercase = false;

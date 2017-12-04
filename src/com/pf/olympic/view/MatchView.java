@@ -16,7 +16,7 @@ public class MatchView extends JFrame {
 	public JPanel bg_panel;
 	public ImageIcon bg_img;
 	public JComboBox<String> cb_match;
-	String[] match= {"ÀüÃ¼","°³È¸½Ä","½ºÅ°Á¡ÇÁ","¹ÙÀÌ¾Ö½½·Ğ","º¾½½·¹ÀÌ","½ºÇÇµå ½ºÄÉÀÌÆÃ","ÇÇ°Ü½ºÄÉÀÌÆÃ","¼îÆ®Æ®·¢","¾ÆÀÌ½ºÇÏÅ°","ÄÃ¸µ","ÆóÈ¸½Ä"};
+	String[] match= {"ì „ì²´","ê°œíšŒì‹","ìŠ¤í‚¤ì í”„","ë°”ì´ì• ìŠ¬ë¡ ","ë´…ìŠ¬ë ˆì´","ìŠ¤í”¼ë“œ ìŠ¤ì¼€ì´íŒ…","í”¼ê²¨ ìŠ¤ì¼€ì´íŒ…","ì‡¼íŠ¸íŠ¸ë™","ì•„ì´ìŠ¤ í•˜í‚¤","ì»¬ë§","ííšŒì‹"};
 	public JButton bt_select;
 	public JButton bt_open;
 	public JButton bt_jump_8, bt_jump_10, bt_jump_12, bt_jump_16, bt_jump_17, bt_jump_19;
@@ -64,7 +64,7 @@ public class MatchView extends JFrame {
 		bt_cart.setRolloverIcon(icon_cart_mouse);
 		bt_mypage.setRolloverIcon(icon_mypage_mouse);
 		
-		//¹öÆ°ÀÇ ¿Ü°û¼±À» ¾ø¾ÖÁÖ¾ú´Ù.
+		//ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Ü°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½.
 		/*bt_home.setBorderPainted(false);
 		bt_match.setBorderPainted(false);
 		bt_reservation.setBorderPainted(false);
@@ -102,8 +102,8 @@ public class MatchView extends JFrame {
 		bg_panel = new JPanel();
 		
 		cb_match = new JComboBox<>(match);
-		cb_match.setFont(new Font("µ¸¿ò", Font.BOLD, 15));
-		bt_select = new JButton("°Ë»ö");
+		cb_match.setFont(new Font("ë‹ì›€", Font.BOLD, 15));
+		bt_select = new JButton("ê²€ìƒ‰");
 		
 		icon_circle_blue = new ImageIcon("img/img_icon/icon_circle_blue.png");
 		icon_circle_white = new ImageIcon("img/img_icon/icon_circle_white.png");
@@ -209,16 +209,16 @@ public class MatchView extends JFrame {
 				
 		//img_open, img_jump, img_bi, img_bop, img_speed, 
 		//img_figure, img_short, img_hockey, img_curling, img_close;
-		la_open.setBounds(20, 405, 200, 43);
-		la_jump.setBounds(20, 457, 200, 43);
-		la_bi.setBounds(20, 508, 200, 43);
-		la_bop.setBounds(20, 558, 200, 43);
-		la_speed.setBounds(20, 608, 200, 43);
-		la_figure.setBounds(20, 658, 200, 43);
-		la_short.setBounds(20, 708, 200, 43);
-		la_hockey.setBounds(20, 758, 200, 43);
-		la_curling.setBounds(20, 808, 200, 43);
-		la_close.setBounds(20, 858, 200, 43);
+		la_open.setBounds(11, 405, 220, 43);
+		la_jump.setBounds(11, 457, 220, 43);
+		la_bi.setBounds(11, 508, 220, 43);
+		la_bop.setBounds(11, 558, 220, 43);
+		la_speed.setBounds(11, 608, 220, 43);
+		la_figure.setBounds(11, 658, 220, 43);
+		la_short.setBounds(11, 708, 220, 43);
+		la_hockey.setBounds(11, 758, 220, 43);
+		la_curling.setBounds(11, 808, 220, 43);
+		la_close.setBounds(11, 858, 220, 43);
 		
 		
 		bt_home.setBounds(0, 184, 213, 54);
@@ -229,8 +229,8 @@ public class MatchView extends JFrame {
 		
 		cb_match.setBounds(435, 260, 150, 40);
 		bt_select.setBounds(615, 260, 150, 40);//x+30
-		//ÀüÃ¼ ±æÀÌ 300+30=330, ºä±æÀÌ 1200
-		//¾ÕºÎºĞ 390, 330, 1200-720=480
+		//ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ 300+30=330, ï¿½ï¿½ï¿½ï¿½ï¿½ 1200
+		//ï¿½ÕºÎºï¿½ 390, 330, 1200-720=480
 		//435, 330, 435
 		
 		bt_open.setBounds(289, 405, 48, 43);
@@ -309,8 +309,8 @@ public class MatchView extends JFrame {
 		bt_hockey_24.setBounds(1085, 758, 48, 43);
 		bt_hockey_25.setBounds(1138, 758, 48, 43);
 		
-		//x ½ÃÀÛ ±âÁØ 237, y±âÁØ 809, ÀüÃ¼ width±âÁØ 48, ÀüÃ¼ height±âÁØ 43
-		//x Â÷ÀÌ´Â 5
+		//x ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 237, yï¿½ï¿½ï¿½ï¿½ 809, ï¿½ï¿½Ã¼ widthï¿½ï¿½ï¿½ï¿½ 48, ï¿½ï¿½Ã¼ heightï¿½ï¿½ï¿½ï¿½ 43
+		//x ï¿½ï¿½ï¿½Ì´ï¿½ 5
 		bt_curling_8.setBounds(237, 808, 48, 43); //285 
 		bt_curling_9.setBounds(289, 808, 48, 43); //338
 		bt_curling_10.setBounds(343, 808, 48, 43); //392

@@ -74,7 +74,7 @@ public class ReserveView extends JFrame {
 		bt_cart.setRolloverIcon(icon_cart_mouse);
 		bt_mypage.setRolloverIcon(icon_mypage_mouse);
 		
-		//¹öÆ°ÀÇ ¿Ü°û¼±À» ¾ø¾ÖÁÖ¾ú´Ù.
+		//ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Ü°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½.
 		/*bt_home.setBorderPainted(false);
 		bt_match.setBorderPainted(false);
 		bt_reservation.setBorderPainted(false);
@@ -82,24 +82,24 @@ public class ReserveView extends JFrame {
 		bt_mypage.setBorderPainted(false);*/
 	
 
-		la_match_name = new JLabel("¹ÙÀÌ¾Ö½½·Ğ ³²¼º °èÁÖ 4 x 7.5km");
-		la_match_date = new JLabel("2018³â 2¿ù 23ÀÏ(±İ)");
+		la_match_name = new JLabel("ë°”ì´ì• ìŠ¬ë¡  ë‚¨ì„± ê³„ì£¼ x 7.5km");
+		la_match_date = new JLabel("2018ë…„ 2ì›” 23ì¼(ê¸ˆ)");
 		la_match_starttime = new JLabel("20:15");
 		la_hyphen = new JLabel("~");
 		la_match_endtime = new JLabel("21:45");
-		la_stadium_category = new JLabel("ÆòÃ¢ ¸¶¿îÆ¾ Å¬·¯½ºÅÍ");
+		la_stadium_category = new JLabel("í‰ì°½ ë§ˆìš´í‹´ í´ëŸ¬ìŠ¤í„°");
 		la_slash = new JLabel("/");
-		la_stadium_name = new JLabel("¾ËÆæ½Ã¾Æ ¹ÙÀÌ¾Ö½½·Ğ ¼¾ÅÍ");
+		la_stadium_name = new JLabel("ì•Œíœì‹œì•„ ë°”ì´ì• ìŠ¬ë¡  ì„¼í„°");
 		
-		//la_total_price.setFont(new Font("µ¸¿ò", Font.BOLD, 40));
-		la_match_name.setFont(new Font("µ¸¿ò", Font.BOLD, 25));
-		la_match_date.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_match_starttime.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_hyphen.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_match_endtime.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_stadium_category.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_slash.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_stadium_name.setFont(new Font("µ¸¿ò", Font.BOLD, 18));		
+		//la_total_price.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 40));
+		la_match_name.setFont(new Font("ë‹ì›€", Font.BOLD, 25));
+		la_match_date.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_match_starttime.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_hyphen.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_match_endtime.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_stadium_category.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_slash.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_stadium_name.setFont(new Font("ë‹ì›€", Font.BOLD, 18));		
 		
 		
 		img_stadium = new ImageIcon("img/img_icon/img_stadium_bi.png");
@@ -110,46 +110,46 @@ public class ReserveView extends JFrame {
 		
 		la_A_basic_price = new JLabel("100000");
 		cb_quantity1 = new JComboBox<>(quantity);
-		la_quantity1 = new JLabel("¸Å");
+		la_quantity1 = new JLabel("ë§¤");
 		la_A_wheel_price = new JLabel("20000");
 		cb_quantity2 = new JComboBox<>(quantity);
-		la_quantity2 = new JLabel("¸Å");
+		la_quantity2 = new JLabel("ë§¤");
 		la_A_partner_price = new JLabel("20000");
 		cb_quantity3 = new JComboBox<>(quantity);
-		la_quantity3 = new JLabel("¸Å");
+		la_quantity3 = new JLabel("ë§¤");
 		la_B_basic_price = new JLabel("20000");
 		cb_quantity4 = new JComboBox<>(quantity);
-		la_quantity4 = new JLabel("¸Å");
+		la_quantity4 = new JLabel("ë§¤");
 		la_B_wheel_price = new JLabel("10000");
 		cb_quantity5 = new JComboBox<>(quantity);
-		la_quantity5 = new JLabel("¸Å");
+		la_quantity5 = new JLabel("ë§¤");
 		la_B_partner_price = new JLabel("10000");
 		cb_quantity6 = new JComboBox<>(quantity);
-		la_quantity6 = new JLabel("¸Å");
+		la_quantity6 = new JLabel("ë§¤");
 		
-		la_A_basic_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_A_wheel_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_A_partner_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_B_basic_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_B_wheel_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_B_partner_price.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
+		la_A_basic_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_A_wheel_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_A_partner_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_B_basic_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_B_wheel_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_B_partner_price.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
 		
-		cb_quantity1.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		cb_quantity2.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		cb_quantity3.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		cb_quantity4.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		cb_quantity5.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		cb_quantity6.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
+		cb_quantity1.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		cb_quantity2.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		cb_quantity3.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		cb_quantity4.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		cb_quantity5.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		cb_quantity6.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
 		
-		la_quantity1.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_quantity2.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_quantity3.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_quantity4.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_quantity5.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
-		la_quantity6.setFont(new Font("µ¸¿ò", Font.BOLD, 18));
+		la_quantity1.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_quantity2.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_quantity3.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_quantity4.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_quantity5.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
+		la_quantity6.setFont(new Font("ë‹ì›€", Font.BOLD, 18));
 		
 		Object[][] data = new Object[0][3];
-		Object[] columnNames = { "ÁÂ¼®µî±Ş", "¼ö·®", "°¡°İ"};
+		Object[] columnNames = { "ì¢Œì„ë“±ê¸‰", "ìˆ˜ëŸ‰", "ê°€ê²©"};
 		dtm = new DefaultTableModel(data, columnNames);
 		table = new JTable(dtm);
 		scrol_table = new JScrollPane(table);
@@ -159,7 +159,7 @@ public class ReserveView extends JFrame {
 		table.getColumnModel().getColumn(1).setPreferredWidth(50);
 		table.getColumnModel().getColumn(2).setPreferredWidth(100);
 		table.setRowHeight(50);
-		table.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		table.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
 		dctr = new DefaultTableCellRenderer();
 		dctr.setHorizontalAlignment(SwingConstants.CENTER);
@@ -168,13 +168,13 @@ public class ReserveView extends JFrame {
 			tcm.getColumn(i).setCellRenderer(dctr);
 		}
 		
-		table.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		table.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
-		la_total_str = new JLabel("ÃÑ ¿¹»ó °áÁ¦ ±İ¾×     \\");
+		la_total_str = new JLabel("ì´ ì˜ˆìƒ ê²°ì œ ê¸ˆì•¡     \\");
 		la_total_price = new JLabel("10000");
 		
-		la_total_str.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
-		la_total_price.setFont(new Font("µ¸¿ò", Font.BOLD, 20));
+		la_total_str.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
+		la_total_price.setFont(new Font("ë‹ì›€", Font.BOLD, 20));
 		
 		la_total_str.setForeground(Color.WHITE);
 		la_total_price.setForeground(Color.WHITE);
